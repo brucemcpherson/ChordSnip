@@ -3,4 +3,6 @@ This repo (ChordSnip) was automatically created on 27 July 2016 10:37:35 BST by 
 for more information see the [desktop liberation site](http://ramblings.mcpher.com/Home/excelquirks/drivesdk/gettinggithubready "desktop liberation")
 you can see [library and dependency information here](dependencies.md)
 
-Now update manually with details of this project - this skeleton file is committed only when there is no README.md in the repo.
+The Chord Snip Add-on documentation is here. http://ramblings.mcpher.com/Home/excelquirks/addons/chordsnip
+
+You can pretty much do what you will with this source code (see http://ramblings.mcpher.com/Home/excelquirks/codeuse for more info) - but this Sheets Add-on already exists, so don't just create another the same.
