@@ -96,6 +96,7 @@ var Home = (function (home) {
     
     // watch out for exiting the tab
     var toggles = document.querySelectorAll('[data-mui-controls="' + Process.control.tabs.settings.id + '"]');
+    
     toggles[0].addEventListener ('mui.tabs.hidestart',function () {
       if (Process.applyElementer()) {
         // this would have returned true if any changes happened
