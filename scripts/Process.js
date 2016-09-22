@@ -11,7 +11,7 @@ var Process = (function (process) {
     purchaseLevel:'chsnipLevel',
     fullAccess:10,
     openAccess:true,
-    version:"1.0.0.0"
+    version:"1.0.0.1"
   };
   
   process.applyElementer  = function () {
@@ -138,7 +138,7 @@ var Process = (function (process) {
       watching: {
         watcher:ClientWatcher.addWatcher({
           pollingFrequency:3000,
-          watch:{sheets:false,active:false},
+          rules:{sheets:false,active:false},
           domain:{fiddler:false,scope:elements.controls.wholeSheet.checked ? "Sheet" : "Active"}
         })
       },
