@@ -257,7 +257,7 @@ var Home = (function (home) {
       elem.addEventListener('change', function () {
         var w = Process.control.watching.watcher;
         w.getWatching().domain.applyFilters =  elem.checked;
-        w.poke()
+        w.poke();
       });
     }
   };
