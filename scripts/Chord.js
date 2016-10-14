@@ -954,7 +954,7 @@ var Chord = (function(ns) {
           dataSettings: {
             label: "Data",
             items: ["sourceDivider", "wholeSheet", "selectedRange", "columnDivider", 
-                    "fromColumn", "toColumn", "weightColumn","resetButton_dataSettings"],
+                    "fromColumn", "toColumn", "weightColumn","filterDivider", "applyFilters","resetButton_dataSettings"],
             on:{
               enter:function (elementer,branch) {
                 elementer.getElements().controls.resetButton_dataSettings.disabled = true;
