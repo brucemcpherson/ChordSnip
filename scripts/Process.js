@@ -11,7 +11,7 @@ var Process = (function (process) {
     purchaseLevel:'chsnipLevel',
     fullAccess:10,
     openAccess:true,
-    version:"1.0.0.1"
+    version:"1.1.0.0"
   };
   
   process.applyElementer  = function () {
