@@ -263,7 +263,7 @@ var ClientWatcher = (function (ns) {
             resolve(pack_);
           }
           else {
-            
+
             Provoke.run ("ServerWatcher", "poll", watch_)
             .then (
               function (pack) {
