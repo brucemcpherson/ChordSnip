@@ -18,7 +18,7 @@ var Client = (function(client) {
     
     spinCursor();
     disableButtons (true);
-    
+
     Provoke.run ('Image', 'place', png)
     .then (
       function(result) {
