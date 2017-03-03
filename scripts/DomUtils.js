@@ -69,6 +69,7 @@ var DomUtils = (function(ns) {
           domUrl.revokeObjectURL(url);
           // now we can resolve the promise, passing the base64 url
           resolve(canvas.toDataURL());
+
         };
         
         // load the image
