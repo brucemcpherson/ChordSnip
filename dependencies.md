@@ -1,5 +1,5 @@
 # Google Apps Script Project: ChordSnip
-This repo (ChordSnip) was automatically updated on 20 November 2017 12:46:43 GMT by GasGit
+This repo (ChordSnip) was automatically updated on 31 October 2018 11:43:05 GMT by GasGit
 
 For more information see the [desktop liberation site](http://ramblings.mcpher.com/Home/excelquirks/drivesdk/gettinggithubready "desktop liberation") or [contact me on G+](https://plus.google.com/+BruceMcpherson "Bruce McPherson - GDE")
 ## Details for Apps Script project ChordSnip
@@ -34,6 +34,7 @@ Fiddler| server_js
 Client| server_js
 Server| server_js
 SheetsMore| server_js
+appsscript| json
 ### Directly referenced libraries
 no libraries discovered
 ### All dependencies and sub dependencies
@@ -41,6 +42,8 @@ no libraries discovered
 ### Enabled Google Services
 *library*|*identifier*|*version*
 --- | --- | --- 
-Drive| Drive|unknown
-###Need more detail ?
+Drive| Drive|v2
+### Scopes required
+no scopes discovered
+### Need more detail ?
 You can see [full project info as json here](info.json)
