@@ -71,13 +71,16 @@ var Home = (function (home) {
     
     });
     // insert in sheet 
+    
     Process.control.buttons.insert.addEventListener('click', function () {    
 
       DomUtils.svgToPng (Process.control.code.svg.value,
                          Process.control.chord.settings.scale.margin,
                          Process.control.chord.settings.scale.transparent ? "" : Process.control.chord.settings.scale.fill)
       .then (
+        
         function (png) {
+          console.log ('svg done');
           Client.insertImage ( png );
         })
       ['catch']( 
