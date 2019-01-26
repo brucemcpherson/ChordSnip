@@ -4,6 +4,7 @@ var Image = (function(image) {
   
   // insert an image at row / column in the sheet
   image.insert = function ( range,  png , offx, offy) {
+    Logger.log ('inserting at ' + range.getA1Notation());
     range.getSheet().insertImage (png,  range.getColumn(), range.getRow(),offx || 0 , offy || 0);
     
   };
