@@ -12,8 +12,9 @@ var DomUtils = (function(ns) {
       try {
         // can use the domUrl function from the browser
         var domUrl = window.URL || window.webkitURL || window;
+        console.log ('domurl isok');
         if (!domUrl) {
-          throw new Error("(browser doesnt support this)")
+          throw new Error("(browser doesnt support this)");
         }
         
         // figure out the height and width from svg text
@@ -27,14 +28,14 @@ var DomUtils = (function(ns) {
         if (!svgText.match(/xmlns=\"/mi)){
           svgText = svgText.replace ('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ') ;  
         }
-        
+        console.log ('creating canvas');
         // create a canvas element to pass through
         var canvas = document.createElement("canvas");
         canvas.width = height+margin*2;
         canvas.height = width+margin*2;
         var ctx = canvas.getContext("2d");
         
-        
+        console.log ('making svg');
         // make a blob from the svg
         var svg = new Blob([svgText], {
           type: "image/svg+xml;charset=utf-8"
@@ -42,12 +43,15 @@ var DomUtils = (function(ns) {
         
         // create a dom object for that image
         var url = domUrl.createObjectURL(svg);
-        
+        console.log ('making url',url);
         // create a new image to hold it the converted type
-        var img = new Image;
+        //var img = new Image;
+        var img = document.createElement("img");
+        img.src = url;
         
         // when the image is loaded we can get it as base64 url
         img.onload = function() {
+          console.log ('image loaded');
           // draw it to the canvas
           ctx.drawImage(this, margin, margin);
           
@@ -67,12 +71,14 @@ var DomUtils = (function(ns) {
           }
           // we don't need the original any more
           domUrl.revokeObjectURL(url);
+           console.log ('revoked');
           // now we can resolve the promise, passing the base64 url
           resolve(canvas.toDataURL());
 
         };
         
         // load the image
+       
         img.src = url;
         
       } catch (err) {
