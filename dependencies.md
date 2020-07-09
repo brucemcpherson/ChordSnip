@@ -1,5 +1,5 @@
 # Google Apps Script Project: ChordSnip
-This repo (ChordSnip) was automatically updated on 26 January 2019 17:39:55 GMT by GasGit
+This repo (ChordSnip) was automatically updated on 09/07/2020, 17:40:49 by GasGit
 
 For more information see the [desktop liberation site](http://ramblings.mcpher.com/Home/excelquirks/drivesdk/gettinggithubready "desktop liberation") or [contact me on G+](https://plus.google.com/+BruceMcpherson "Bruce McPherson - GDE")
 ## Details for Apps Script project ChordSnip
