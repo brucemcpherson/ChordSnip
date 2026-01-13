@@ -1,5 +1,5 @@
 # Google Apps Script Project: ChordSnip
-This repo (ChordSnip) was automatically updated on 6/19/2024, 4:23:31 PM by GasGit
+This repo (ChordSnip) was automatically updated on 1/13/2026, 11:42:43 AM by GasGit
 
 For more information on gasgit, see the [desktop liberation site](https://ramblings.mcpher.com/drive-sdk-and-github/migrategasgit/ "desktop liberation")
 
@@ -15,6 +15,7 @@ The shared link for [ChordSnip is here](https://script.google.com/d/1x3oPg-OD7i0
 ### Modules of ChordSnip.gs included in this repo
 *name*|*type*
 --- | --- 
+appsscript| json
 Chord| server_js
 Utils| server_js
 Process| server_js
@@ -40,7 +41,6 @@ Fiddler| server_js
 Client| server_js
 Server| server_js
 SheetsMore| server_js
-appsscript| json
 ### Directly referenced libraries
 no libraries discovered
 ### All dependencies and sub dependencies
